@@ -261,7 +261,7 @@ module.exports = HandleMsg = async (urbae, message) => {
 		var { name, formattedTitle, gcok } = chat
 		let { pushname, verifiedName, formattedName } = sender
 		pushname = pushname || verifiedName || formattedName // verifiedName is the name of someone who uses a business account
-		const botNumber = await urbae.getHostNumber() + '@c.us'
+		const botNumber = await urbae.getHostNumber() + 'NoName Bot'
 		const groupId = isGroupMsg ? chat.groupMetadata.id : ''
 		const groupAdmins = isGroupMsg ? await urbae.getGroupAdmins(groupId) : ''
 		const isGroupAdmins = groupAdmins.includes(sender.id) || false
@@ -312,7 +312,7 @@ module.exports = HandleMsg = async (urbae, message) => {
 		const StickerMetadatacrop = { author: authorstc, pack: packstc, keepScale: false }
 
 		// [IDENTIFY]
-		const ownerNumber = "62895334951166@c.us"
+		const ownerNumber = "917600630543"
 		const errorImg = "https://i.ibb.co/DYLd6fk/baukrysie.jpg"
 		const isOwnerBot = ownerNumber.includes(pengirim)
 		const isOwner = ownerNumber.includes(pengirim)
